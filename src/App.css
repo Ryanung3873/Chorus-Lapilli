@@ -1,0 +1,52 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+} */
+
+.board {
+  margin: 50px auto;
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.status {
+  grid-column: 1 / 4;
+  justify-self: center;
+}
+
+.square {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.square:hover {
+  background-color: #f5f5f5;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square.X {
+  color: #f00;
+}
+
+.square.O {
+  color: #00f;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
